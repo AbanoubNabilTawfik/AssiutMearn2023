@@ -1,0 +1,6 @@
+<p>event-binding works!</p>
+
+<button (click)="showMessage($event)" >Click Me</button>
+
+<input type="text" #textInput />
+<button (click)="alertMessage(textInput.value)">Show Message</button>

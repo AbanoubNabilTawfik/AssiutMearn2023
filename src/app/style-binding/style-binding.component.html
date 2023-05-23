@@ -1,0 +1,11 @@
+<p>style-binding works!</p>
+
+<h2 style="color:red;">ITI Assiut Branch</h2>
+<h2 [style.color]="textColor">Welcome to Angular Course</h2>
+<h2 [style.color]="hasError ? 'red' : 'green' ">Welcome to ITI Assiut Branch</h2>
+<h2 [style.color]="hasError ? trueColor : falseColor ">Welcome to ITI Assiut Branch</h2>
+
+<h2 [ngStyle]="myStyles">Abanoub Nabil</h2>
+
+<h2 [ngStyle]="hasError ? myStyles :myStyles2">Hello World</h2>
+

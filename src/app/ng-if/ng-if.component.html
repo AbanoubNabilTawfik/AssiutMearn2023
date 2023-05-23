@@ -1,0 +1,20 @@
+<p>ng-if works!</p>
+
+<!-- <h2 *ngIf="displayMessage">Hello Guest</h2> -->
+
+<!-- <div *ngIf="displayMessage else elseBlock">
+    Welcome Abanoub
+</div> -->
+<div *ngIf="displayMessage;then thenBlock; else elseBlock">
+    
+</div>
+<ng-template #thenBlock>
+    <h2>
+        Welcome Abanoub
+    </h2>
+</ng-template>
+<ng-template #elseBlock>
+    <h2>
+        Welcome Guest
+    </h2>
+</ng-template>
