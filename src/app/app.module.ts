@@ -18,6 +18,11 @@ import { FormsModule } from '@angular/forms';
 import { NgIfComponent } from './ng-if/ng-if.component';
 import { NgSwitchComponent } from './ng-switch/ng-switch.component';
 import { NgForComponent } from './ng-for/ng-for.component';
+import { BuitInPipesComponent } from './buit-in-pipes/buit-in-pipes.component';
+import { SquarePipe } from './square.pipe';
+import { EgyptCurrencyPipe } from './egypt-currency.pipe';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +39,12 @@ import { NgForComponent } from './ng-for/ng-for.component';
     TwoWayBindingComponent,
     NgIfComponent,
     NgSwitchComponent,
-    NgForComponent
+    NgForComponent,
+    BuitInPipesComponent,
+    SquarePipe,
+    EgyptCurrencyPipe,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
