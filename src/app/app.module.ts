@@ -32,6 +32,8 @@ import { DepartmentDetailsComponent } from './department-details/department-deta
 import { OverviewComponent } from './overview/overview.component';
 import { ContactComponent } from './contact/contact.component';
 import { TemplateDrivenFormsComponent } from './template-driven-forms/template-driven-forms.component';
+import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -61,13 +63,15 @@ import { TemplateDrivenFormsComponent } from './template-driven-forms/template-d
     DepartmentDetailsComponent,
     OverviewComponent,
     ContactComponent,
-    TemplateDrivenFormsComponent
+    TemplateDrivenFormsComponent,
+    ReactiveFormsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
